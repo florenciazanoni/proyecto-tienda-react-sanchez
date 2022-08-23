@@ -1,7 +1,7 @@
 import React from "react";
-import { Footer, Blog, Carrusel, Top_Restaurantes, Header } from "./containers";
-import {Categorias, Navbar } from "./components";
-import './App.css'; 
+import { Footer, Blog, Carrusel, Restaurantes, Header } from "./containers";
+import { Categorias, Navbar, ItemListContainer } from "./components";
+import "./App.css";
 
 const App = () => {
   return (
@@ -10,11 +10,12 @@ const App = () => {
         <Header />
         <Navbar />
       </div>
-      <Categorias/>
-      <Carrusel/>
-      <Top_Restaurantes/>
-      <Blog/>
-      <Footer/>
+      <ItemListContainer/>
+      <Categorias />
+      <Carrusel />
+      <Restaurantes />
+      <Blog />
+      <Footer />
     </div>
   );
 };
